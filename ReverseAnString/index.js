@@ -4,6 +4,7 @@ function reverseString(str) {
     arrayOfLetters.forEach(element => {
         result.unshift(element)
     });
+    result.toString()
     return result
   }
   
