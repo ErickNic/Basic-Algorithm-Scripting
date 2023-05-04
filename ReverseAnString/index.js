@@ -1,11 +1,11 @@
 function reverseString(str) {
     const arrayOfLetters = str.split('');
-    const result = []
+    let result = []
     arrayOfLetters.forEach(element => {
         result.unshift(element)
     });
-    result.toString()
-    return result
+    result = result.toString().replaceAll(',','');
+    return result;
   }
   
 console.log(reverseString("hello"));
